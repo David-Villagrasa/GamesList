@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using GamesList.Views;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -19,6 +20,20 @@ namespace GamesList
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        protected void OpenLists(object sender, RoutedEventArgs e)
+        {
+            Lists lists = new Lists();
+            lists.Owner = this;
+            //this.IsEnabled = false;
+            this.Visibility = Visibility.Hidden;
+            lists.Show();
+        }
+
+        protected void SaveFiles()
+        {
+            //TODO
         }
     }
 }
