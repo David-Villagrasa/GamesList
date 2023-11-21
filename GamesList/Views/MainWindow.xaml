@@ -13,7 +13,7 @@
                 <MenuItem Header="_Change files path" />
                 <MenuItem Header="_Save" />
                 <Separator />
-                <MenuItem Header="_Exit" />
+                <MenuItem Header="_Exit" Click="Exit" />
             </MenuItem>
             <MenuItem Header="_Help"/>
         </Menu>
@@ -24,8 +24,8 @@
             </Grid.ColumnDefinitions>
             <Label Content="GamesList" HorizontalAlignment="Center" Margin="0,35,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="50"/>
             <Button Content="Lists" Click="OpenLists" HorizontalAlignment="Center" Margin="0,138,0,0" VerticalAlignment="Top" Height="41" Width="92"/>
-            <Button Content="Configuration" HorizontalAlignment="Center" Margin="0,217,0,0" VerticalAlignment="Top" Height="31" Width="92"/>
-            <Button Content="About" HorizontalAlignment="Center" Margin="0,294,0,0" VerticalAlignment="Top" Height="30" Width="92"/>
+            <Button Content="Configuration" Click="OpenConfiguration" HorizontalAlignment="Center" Margin="0,217,0,0" VerticalAlignment="Top" Height="31" Width="92"/>
+            <Button Content="About" Click="OpenAbout" HorizontalAlignment="Center" Margin="0,294,0,0" VerticalAlignment="Top" Height="30" Width="92"/>
         </Grid>
     </Grid>
 </Window>
